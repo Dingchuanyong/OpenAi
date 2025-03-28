@@ -1,0 +1,26 @@
+
+server:
+  port: 8001
+spring:
+  application:
+    name: alibabaChatModel
+  ai:
+    dashscope:
+      api-key: ffb3ca233900439f9257977189f59f7e
+    chat:
+      client:
+        option:
+          model: DeepSeek-V3
+        enabled: true
+    ollama:
+      enable: true
+      baseurl: http://127.0.0.1:11434
+      chat:
+        options:
+          model: deepseek-r1:1.5b
+    moonshot:
+      api-key: sk-ffb3ca233900439f9257977189f59f7e
+      chat:
+        options:
+            model: DeepSeek-V3
+
